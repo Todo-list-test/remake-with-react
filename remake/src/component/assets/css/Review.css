@@ -1,0 +1,124 @@
+/* what the say */
+
+.what-the-say {
+  display: flex;
+  width:1099px;
+  height:410px;
+  margin:45px auto 80px auto;
+  padding-left:59px;
+  text-align: left;
+  overflow-x:hidden;
+}
+
+.what-the-say-img {
+  width:431px;
+  height:410px;
+  margin-right:101px;
+  border-radius: 10px;
+  background-image:
+  url(../img/bg_what_the_say_1.png),
+  url(../img/bg_what_the_say_2.png),
+  url(../img/bg_what_the_say_3.png);
+  background-position: 
+  -16px -16px,
+  -16px 186px,
+  207px 186px;
+  background-repeat: no-repeat;
+  box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.25);
+}
+
+.what-the-say strong {
+  display: block;
+  width:140px;
+  height:28px;
+  font:normal 500 22px 'ReadexPro-Medium';
+  color:#ffc845;
+  line-height: 28px;
+  margin:21px 0px 9px 0px;
+}
+
+.what-the-say h2 {
+  width:481px;
+  height:80px;
+  font:normal 700 32px 'Readexpro-Bold';
+  margin-bottom: 32px;
+  line-height: 40px;
+}
+
+.review-container {
+  display: flex;
+  width:567px;
+  height:210px;
+  flex-wrap: nowrap;
+}
+
+.review {
+  width:452px;
+  height:210px;
+  margin-right:24px;
+  background-color: #f1f1f1;
+  border-radius: 10px;
+  transition:.5s;
+}
+
+.profile {
+  width:218px;
+  height:60px;
+  padding:28px 218px 24px 20px;
+}
+
+.profile > img {
+  width:59px;
+  height:60px;
+  float:left;
+  border-radius: 50%;
+}
+
+.profile > em {
+  width:140px;
+  height:21px;
+  margin-left:19px;
+  margin-bottom:11px;
+  font:normal 500 20px "ReadexPro"
+}
+
+.review > p {
+  margin:0px 20px 29px;
+  font:normal 400 18px "ReadexPro";
+  color:#676767;
+}
+
+
+
+.review-page {
+  display:inline-block;
+  width:8px;
+  height:8px;
+  margin-top:15px;
+  border-radius: 50%;
+  background-color: #fff9ea;
+}
+
+.review-page:nth-of-type(1) {
+  margin-left:175px;
+}
+
+.review-page:nth-of-type(2) {
+  margin-left:8px;
+}
+
+.review-page:nth-of-type(3) {
+  margin-left:8px;
+}
+
+.page-radio:nth-of-type(1):checked ~ .review-page:nth-of-type(1) {
+  background-color: #ffcb45;
+}
+
+.page-radio:nth-of-type(2):checked ~ .review-page:nth-of-type(2) {
+  background-color: #ffcb45;
+}
+
+.page-radio:nth-of-type(3):checked ~ .review-page:nth-of-type(3) {
+  background-color: #ffcb45;
+}
