@@ -135,3 +135,8 @@ main > div {
   font-family: "Inter-Bold";
   src: url('../font/Inter-ExtraBold.ttf') format('truetype');
 }
+
+/* setting */
+.flex {
+  display: flex;
+}

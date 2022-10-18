@@ -1,3 +1,5 @@
+import { useState } from 'react';
+import Menu from './Menu';
 import './assets/css/reset.css';
 import './assets/css/OurMenu.css';
 import mieRamen from "./assets/img/img_mie_ramen.png";
@@ -6,6 +8,36 @@ import rotiBaker from "./assets/img/img_roti_baker.png";
 import spaghetti from "./assets/img/img_spaghetti.png";
 
 const OurMenu = () => {
+  const [Foods, setFoods] = useState([{
+    id : 'menu-mie-ramen',
+    name : 'Mie Ramen',
+    subname : 'lorem ipsum',
+    img : mieRamen,
+    alt : '미에라면',
+    cost : '20.2'},
+    {
+    id : "menu-salad-tahu",
+    name : 'Salad Tahu',
+    subname : 'lorem ipsum',
+    img : saladTahu,
+    alt : '샐러드타후',
+    cost : '20.2'},
+    {
+    id : "menu-roti-baker",
+    name : 'Roti Baker',
+    subname : 'lorem ipsum',
+    img : rotiBaker,
+    alt : '로티베이커',
+    cost : '20.2'},
+    {
+    id : "menu-spaghetti",
+    name : 'Spaghetti',
+    subname : 'lorem ipsum',
+    img : spaghetti,
+    alt : '스파게티',
+    cost : '20.2'},
+    ]);
+
   return (
     <div className="our-menu">
       <strong>Our menu</strong>
@@ -16,57 +48,9 @@ const OurMenu = () => {
       </p>
 
       <ul className="menu">
-        <li className="menu-large-container">
-          <img src={mieRamen} alt="미에라멘"/>
-          <div className="menu-small-container">
-            <div className="menu-contents">
-              <b>Mie Ramen</b>
-              <p>lorem ipsum</p>
-              <span className="cost">$ 20.2</span>
-              <input type="checkbox" name="like" id="menu-mie-ramen" value="menus" />
-              <label className="like" htmlFor="menu-mie-ramen"></label>
-            </div>
-          </div>
-        </li>
-
-        <li className="menu-large-container">
-          <img src={saladTahu} alt="샐러드타후"/>
-          <div className="menu-small-container">
-            <div className="menu-contents">
-              <b>Salad Tahu</b>
-              <p>lorem ipsum</p>
-              <span className="cost">$ 20.2</span>
-              <input type="checkbox" name="like" id="menu-salad-tahu" value="menus" />
-              <label className="like" htmlFor="menu-salad-tahu"></label>
-            </div>
-          </div>
-          </li>
-
-        <li className="menu-large-container">
-          <img src={rotiBaker} alt="로티베이커" />
-          <div className="menu-small-container">
-            <div className="menu-contents">
-              <b>Roti Baker</b>
-              <p>lorem ipsum</p>
-              <span className="cost">$ 20.2</span>
-              <input type="checkbox" name="like" id="menu-roti-baker" value="menus" />
-              <label className="like" htmlFor="menu-roti-baker"></label>
-            </div>
-          </div>
-        </li>
-
-        <li className="menu-large-container">
-          <img src={spaghetti} alt="스파게티" />
-          <div className="menu-small-container">
-            <div className="menu-contents">
-              <b>Spaghetti</b>
-              <p>lorem ipsum</p>
-              <span className="cost">$ 20.2</span>
-              <input type="checkbox" name="like" id="menu-spaghetti" value="menus" />
-              <label className="like" htmlFor="menu-spaghetti"></label>
-            </div>
-          </div>
-        </li>
+        {Foods.map(food => (
+          <Menu key={food.name} id={food.id} name={food.name} subname={food.subname} img={food.img} alt={food.alt} cost={food.cost}/>
+        ))}
       </ul>
       <button className="more-menu">
         More Menu

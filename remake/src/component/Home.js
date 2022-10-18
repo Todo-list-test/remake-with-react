@@ -15,8 +15,6 @@ const Home = () => {
         Get Started
       </button>
       </div>
-      <div className="home-bg">
-      </div>
     </div>
   );
 };

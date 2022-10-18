@@ -2,6 +2,7 @@
 
 footer {
   width:100%;
+  min-width:1440px;
   height:489px;
   background-color: #fff9ea;
 }
