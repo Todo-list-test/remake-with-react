@@ -19,9 +19,9 @@ const Footer = () => {
             <p>Jalan Semangka Raya, Telaga<br /> 
             Murni, Cikarang Barat, Kab, Bekasi</p>
             <div className="sns-link">
-              <div className="insta"><img src={insta} alt="인스타그램아이콘" /></div>
-              <div className="facebook"><img src={facebook} alt="페이스북아이콘" /></div>
-              <div className="twitter"><img src={twitter} alt="트위터아이콘" /></div>
+              <a className="insta" href="#insta"><img src={insta} alt="인스타그램아이콘" /></a>
+              <a className="facebook" href="#facebook"><img src={facebook} alt="페이스북아이콘" /></a>
+              <a className="twitter" href="#twitter"><img src={twitter} alt="트위터아이콘" /></a>
             </div>
           </div>
           <ul className="footer-info">
