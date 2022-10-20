@@ -117,11 +117,6 @@ main > div {
 }
 
 @font-face {
-  font-family: "Inter";
-  src: url('../font/Inter-Regular.ttf') format('truetype');
-}
-
-@font-face {
   font-family: "Inter-Medium";
   src: url('../font/Inter-Medium.ttf') format('truetype');
 }

@@ -1,7 +1,6 @@
 /* header */
 header {
   width:100%;
-  min-width:1440px;
   background-color: #fff9ea;
   justify-content: center;
 }
@@ -57,7 +56,9 @@ header > div {
   right:-4px;
   background-color: #ffcb45;
   border-radius: 50%;
-  font : normal 10px 'ProdexPro', sans-serif;
+  font : normal 9px 'Inter-Medium', sans-serif;
+  font-weight: 500;
+  color : #1d1d1d;
   text-align: center;
   line-height: 12px;
 }

@@ -7,19 +7,20 @@ import profile2 from "./assets/img/img_profile_2.png";
 
 const WhatTheSay = () => {
   const [Reviews, setReviews] = useState([{
-    id : 1,
-    name : 'Naura Silvana',
-    profile : profile1,
-    content : '"Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis."'},
+      id : 1,
+      name : 'Naura Silvana',
+      profile : profile1,
+      content : '"Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis."'},
     {
-      id : '2',
+      id : 2,
       name : 'Azura',
       profile : profile2,
       content : '"Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis."'}
     ]);
 
   return (
-    <div className="what-the-say">
+    <div className="review-visible">
+      <div className="what-the-say">
       <div className="what-the-say-img"></div>
       <div>
         <strong>What the say</strong>
@@ -32,7 +33,7 @@ const WhatTheSay = () => {
             ))}
           </ul>
           
-          <input type="radio" name="page" id="review_page_1" className="page-radio" />
+          <input type="radio" name="page" id="review_page_1" className="page-radio" defaultChecked/>
           <input type="radio" name="page" id="review_page_2" className="page-radio" />
           <input type="radio" name="page" id="review_page_3" className="page-radio" />
           <label htmlFor="review_page_1" className="review-page" title="1page"><span className="blind">1페이지</span></label>
@@ -41,6 +42,7 @@ const WhatTheSay = () => {
         </div>
 
       </div>
+    </div>
     </div>
   );
 };

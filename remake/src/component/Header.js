@@ -26,7 +26,7 @@ const Header = () => {
         <img src={search} alt="검색" />
       </a>
       <a className="shopping-ico" href="#shopping">
-        <span className="shopping-alarm">2</span>
+        <span className="shopping-alarm"><small>2</small></span>
         <img  src={shopping} alt="장바구니" />
       </a>
 
