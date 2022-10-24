@@ -1,5 +1,4 @@
-import './assets/css/reset.css';
-import './assets/css/Review.css';
+import './assets/css/Review.scss';
 import Star from './Star.js';
 
 const Review = ({id, name, profile, content}) => {

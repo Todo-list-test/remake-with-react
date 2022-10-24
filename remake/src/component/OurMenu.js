@@ -1,11 +1,12 @@
 import { useState } from 'react';
 import Menu from './Menu';
-import './assets/css/reset.css';
-import './assets/css/OurMenu.css';
+import './assets/css/OurMenu.scss';
 import mieRamen from "./assets/img/img_mie_ramen.png";
 import saladTahu from "./assets/img/img_salad_tahu.png";
 import rotiBaker from "./assets/img/img_roti_baker.png";
 import spaghetti from "./assets/img/img_spaghetti.png";
+
+
 
 const OurMenu = () => {
   const [Foods, setFoods] = useState([{

@@ -1,5 +1,4 @@
-import './assets/css/reset.css';
-import './assets/css/HowItWorks.css';
+import './assets/css/HowItWorks.scss';
 
 const HowItWorks = () => {
   return (

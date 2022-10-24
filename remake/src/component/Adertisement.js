@@ -1,5 +1,4 @@
-import './assets/css/reset.css';
-import './assets/css/Adertisement.css';
+import './assets/css/Adertisement.scss';
 
 const Adertisement = () => {
   return (

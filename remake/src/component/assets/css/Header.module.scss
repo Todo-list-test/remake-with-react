@@ -1,0 +1,110 @@
+/* header */
+
+header {
+  width: 100%;
+  background-color: #fff9ea;
+  justify-content: center;
+
+  > div {
+    width: 1440px;
+    height: 108px;
+    margin: 0px auto;
+  }
+}
+
+.LetUsFood {
+  width: 167px;
+  height: 47px;
+  margin: 29px 129px 32px 141px;
+
+  > a {
+    font: normal 600 24px 'ReadexPro-SemiBold', sans-serif;
+    line-height: 32px;
+    align-items: flex-end;
+
+    > img {
+      margin-left: 4px;
+    }
+  }
+}
+
+.menu {
+  display:flex;
+  width: 570px;
+  height: 37px;
+  margin: 34px 0px 37px 0px;
+  justify-content: space-between;
+
+  > a {
+    font: normal 500 22px 'ReadexPro-SemiBold', sans-serif;
+  }
+}
+
+.searchIco > img {
+  width: 26px;
+  height: 26px;
+  margin: 39px 31px 41px 73px;
+}
+
+.shoppingIco {
+  position: relative;
+
+  > img {
+    width: 24px;
+    height: 25px;
+    margin: 39px 0px 44px 0px;
+  }
+}
+
+.shoppingAlarm {
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  top: 35px;
+  right: -4px;
+  background-color: #ffcb45;
+  border-radius: 50%;
+  font: normal 9px 'Inter-Medium', sans-serif;
+  font-weight: 500;
+  color: #1d1d1d;
+  text-align: center;
+  line-height: 12px;
+}
+
+.signIn {
+  display:flex;
+  width: 122px;
+  height: 38px;
+  margin: 33px 130px 37px 33px;
+  background-color: #ffcb45;
+  border: 0px;
+  border-radius: 50px;
+  font: normal 700 14px 'ReadexPro-Bold', sans-serif;
+  justify-content: center;
+  align-items: center;
+
+  img {
+    width: 16px;
+    height: 18px;
+    margin-right: 16px;
+  }
+}
+
+.menu > a {
+  color: #615f5a;
+  background-image: linear-gradient(#ffcb45, #ffcb45);
+  background-size: 0% 5px;
+  background-repeat: no-repeat;
+  transition: background-size 0.5s;
+  background-position: 0 100%;
+
+  &:hover {
+    color: #1d1d1d;
+    background-image: linear-gradient(#ffcb45, #ffcb45);
+    background-size: 0% 5px;
+    background-repeat: no-repeat;
+    transition: background-size 0.3s;
+    background-size: 100% 5px;
+    color: #1d1d1d;
+  }
+}

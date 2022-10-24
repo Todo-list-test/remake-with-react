@@ -1,30 +1,23 @@
-import './assets/css/reset.css';
-import './assets/css/Star.css';
+import './assets/css/Star.scss';
 
-const Star = (id) => {
+const Star = ({id}) => {
+
+  const Starpoint = () => {
+    const result = [];
+    for (let i = 1; i < 11; i++) {
+      result.push(
+        <input key={"star_input" + i} type="radio" name={id + "starpoint"} id={id + "starpoint_" + i} className="star-radio" />
+      );
+      result.push(
+        <label key={"star_label" + i} htmlFor={id + "starpoint_" + i}className="label-star" title={0.5 * i}><span className="blind">{0.5 * i}점</span></label>
+      );
+    }
+    return result;
+  };
+
   return (
     <div className="star-container">
-      <input type="radio" name={id.id + "starpoint"} id={id.id + "starpoint_1"} className="star-radio" />
-      <input type="radio" name={id.id + "starpoint"} id={id.id + "starpoint_2"}
-      className="star-radio" />
-      <input type="radio" name={id.id + "starpoint"} id={id.id + "starpoint_3"} className="star-radio" />
-      <input type="radio" name={id.id + "starpoint"} id={id.id + "starpoint_4"}className="star-radio" />
-      <input type="radio" name={id.id + "starpoint"} id={id.id + "starpoint_5"} className="star-radio" />
-      <input type="radio" name={id.id + "starpoint"} id={id.id + "starpoint_6"} className="star-radio" />
-      <input type="radio" name={id.id + "starpoint"} id={id.id + "starpoint_7"} className="star-radio" />
-      <input type="radio" name={id.id + "starpoint"} id={id.id + "starpoint_8"} className="star-radio" />
-      <input type="radio" name={id.id + "starpoint"} id={id.id + "starpoint_9"} className="star-radio" defaultChecked/>
-      <input type="radio" name={id.id + "starpoint"} id={id.id + "starpoint_10"} className="star-radio" />
-      <label htmlFor={id.id + "starpoint_1"}className="label-star" title="0.5"><span className="blind">0.5점</span></label>
-      <label htmlFor={id.id + "starpoint_2"} className="label-star" title="1.0"><span className="blind">1.0점</span></label>
-      <label htmlFor={id.id + "starpoint_3"} className="label-star" title="1.5"><span className="blind">1.5점</span></label>
-      <label htmlFor={id.id + "starpoint_4"} className="label-star" title="2.0"><span className="blind">2.0점</span></label>
-      <label htmlFor={id.id + "starpoint_5"} className="label-star" title="2.5"><span className="blind">2.5점</span></label>
-      <label htmlFor={id.id + "starpoint_6"} className="label-star" title="3.0"><span className="blind">3.0점</span></label>
-      <label htmlFor={id.id + "starpoint_7"} className="label-star" title="3.5"><span className="blind">3.5점</span></label>
-      <label htmlFor={id.id + "starpoint_8"} className="label-star" title="4.0"><span className="blind">4.0점</span></label>
-      <label htmlFor={id.id + "starpoint_9"} className="label-star" title="4.5"><span className="blind">4.5점</span></label>
-      <label htmlFor={id.id + "starpoint_10"} className="label-star" title="5.0"><span className="blind">5.0점</span></label>
+      {Starpoint()}
       <span className="star"></span>
     </div>
   );

@@ -1,0 +1,103 @@
+/* how-it-works */
+
+.how-it-works {
+  width: 1032px;
+  height: 505px;
+  margin: 80px auto;
+  text-align: center;
+  vertical-align: middle;
+
+  > {
+    * {
+      text-align: center;
+      vertical-align: middle;
+      margin: 0 auto;
+    }
+
+    strong {
+      width: 140px;
+      height: 28px;
+      padding-right: 2px;
+      font: normal 500 22px "ReadexPro-Medium";
+      color: #ffcb45;
+    }
+
+    h2 {
+      width: 247px;
+      height: 40px;
+      margin-top: 7px;
+      margin-bottom: 26px;
+      padding-left: 23px;
+      font: normal 700 32px "ReadexPro-Bold";
+    }
+
+    p {
+      width: 611px;
+      height: 56px;
+      margin-bottom: 32px;
+      padding-right: 1px;
+      font: normal 500 22px "ReadexPro-Medium";
+      color: #616161;
+    }
+  }
+}
+
+.strength > div {
+  width: 241px;
+  height: 316px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: middle;
+
+  > {
+    em {
+      width: 241px;
+      height: 47px;
+      font: normal 600 28px "ReadexPro-SemiBold";
+      line-height: 47px;
+    }
+
+    p {
+      font: normal 500 20px "ReadexPro-Medium";
+      margin-top: 15px;
+      line-height: 25px;
+      color: #616161;
+    }
+  }
+}
+
+.easy-to-order {
+  margin-right: 156px;
+  background-image: url('../img/bg_order.png');
+  background-repeat: no-repeat;
+  background-position: 16px top;
+}
+
+.fastest-delivery {
+  margin-right: 153px;
+  background-image: url('../img/bg_delivery.png');
+  background-repeat: no-repeat;
+  background-position: 29px top;
+}
+
+.best-quality {
+  background-image: url('../img/bg_quality.png');
+  background-repeat: no-repeat;
+  background-position: 44px top;
+  > p {
+    width: 240px;
+    height: 50px;
+    margin: 0 auto;
+  }
+}
+
+.easy-to-order > p {
+  width: 234px;
+  height: 50px;
+}
+
+.fastest-delivery > p {
+  width: 220px;
+  height: 50px;
+}

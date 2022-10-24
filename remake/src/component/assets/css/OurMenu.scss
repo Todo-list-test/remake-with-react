@@ -1,0 +1,49 @@
+/* our menu */
+
+.our-menu {
+  width: 1192px;
+  height: 670px;
+  margin: 0 auto;
+  text-align: center;
+
+  strong {
+    width: 108px;
+    height: 28px;
+    font: normal 500 22px 'ReadexPro-Medium';
+    color: #ffcb45;
+    text-align: center;
+  }
+
+  > {
+    h2 {
+      width: 295px;
+      height: 40px;
+      margin: 6px auto 27px auto;
+      font: normal 700 32px 'ReadexPro-Bold';
+    }
+
+    p {
+      width: 518px;
+      height: 56px;
+      margin: 0 auto;
+      margin-bottom: 32px;
+      font: normal 500 22px 'ReadexPro-Medium';
+      color: #616161;
+    }
+  }
+}
+
+.menu {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 70px;
+}
+
+.more-menu {
+  width: 136px;
+  height: 40px;
+  background-color: #ffcb45;
+  font: normal 700 14px "ReadexPro";
+  border-radius: 50px;
+}

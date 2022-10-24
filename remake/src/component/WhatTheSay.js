@@ -1,7 +1,7 @@
 import Review from "./Review";
 import { useState } from 'react';
-import './assets/css/reset.css';
-import './assets/css/WhatTheSay.css';
+
+import './assets/css/WhatTheSay.scss';
 import profile1 from "./assets/img/img_profile_1.png";
 import profile2 from "./assets/img/img_profile_2.png";
 
@@ -18,6 +18,19 @@ const WhatTheSay = () => {
       content : '"Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis."'}
     ]);
 
+    const Pages = () => {
+      const result = [];
+      for (let i = 1; i < Reviews.length + 1; i++) {
+        result.push(
+          <input key={"page_input_" + i} type="radio" name="page" id={ "review_page_" + i} className="page-radio" />
+        );
+        result.push(
+          <label key={"page_label_" + i} htmlFor={"review_page_" + i} className="review-page" title={i + "page"}><span className="blind">{i}페이지</span></label>
+        );
+      }
+      return result;
+    };
+
   return (
     <div className="review-visible">
       <div className="what-the-say">
@@ -33,16 +46,11 @@ const WhatTheSay = () => {
             ))}
           </ul>
           
-          <input type="radio" name="page" id="review_page_1" className="page-radio" defaultChecked/>
-          <input type="radio" name="page" id="review_page_2" className="page-radio" />
-          <input type="radio" name="page" id="review_page_3" className="page-radio" />
-          <label htmlFor="review_page_1" className="review-page" title="1page"><span className="blind">1페이지</span></label>
-          <label htmlFor="review_page_2" className="review-page" title="2page"><span className="blind">2페이지</span></label>
-          <label htmlFor="review_page_3" className="review-page" title="3page"><span className="blind">3페이지</span></label>
+          {Pages()}
         </div>
 
       </div>
-    </div>
+      </div>
     </div>
   );
 };
