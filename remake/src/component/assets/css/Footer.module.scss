@@ -12,7 +12,8 @@ footer {
   height: 200px;
   margin: 0 auto;
   padding: 84px 103px 91px 0px;
-  background-image: url(../img/bg_circle.png), url(../img/bg_circle.png), url(../img/bg_circle.png);
+  background-image: url(../img/bg_circle.png), url(../img/bg_circle.png),
+    url(../img/bg_circle.png);
   background-size: 38px, 66px, 99px;
   background-repeat: no-repeat;
   background-position: 380px 81px, 664px 233px, 986px 31px;
@@ -38,7 +39,7 @@ footer {
   height: 47px;
 
   > a {
-    font: normal 600 24px 'ReadexPro-SemiBold', sans-serif;
+    font: normal 600 24px "ReadexPro-SemiBold", sans-serif;
     line-height: 32px;
     align-items: flex-end;
     color: #1d1d1d;
@@ -70,7 +71,8 @@ footer {
   gap: 24px;
 }
 
-.insta, .twitter {
+.insta,
+.twitter {
   display: flex;
   width: 45px;
   height: 48px;
@@ -92,7 +94,9 @@ footer {
   align-items: center;
 }
 
-.insta > img, .facebook > img, .twitter > img {
+.insta > img,
+.facebook > img,
+.twitter > img {
   padding: 10px;
 }
 

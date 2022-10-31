@@ -18,7 +18,7 @@ header {
   margin: 29px 129px 32px 141px;
 
   > a {
-    font: normal 600 24px 'ReadexPro-SemiBold', sans-serif;
+    font: normal 600 24px "ReadexPro-SemiBold", sans-serif;
     line-height: 32px;
     align-items: flex-end;
 
@@ -29,14 +29,14 @@ header {
 }
 
 .menu {
-  display:flex;
+  display: flex;
   width: 570px;
   height: 37px;
   margin: 34px 0px 37px 0px;
   justify-content: space-between;
 
   > a {
-    font: normal 500 22px 'ReadexPro-SemiBold', sans-serif;
+    font: normal 500 22px "ReadexPro-SemiBold", sans-serif;
   }
 }
 
@@ -64,7 +64,7 @@ header {
   right: -4px;
   background-color: #ffcb45;
   border-radius: 50%;
-  font: normal 9px 'Inter-Medium', sans-serif;
+  font: normal 9px "Inter-Medium", sans-serif;
   font-weight: 500;
   color: #1d1d1d;
   text-align: center;
@@ -72,14 +72,14 @@ header {
 }
 
 .signIn {
-  display:flex;
+  display: flex;
   width: 122px;
   height: 38px;
   margin: 33px 130px 37px 33px;
   background-color: #ffcb45;
   border: 0px;
   border-radius: 50px;
-  font: normal 700 14px 'ReadexPro-Bold', sans-serif;
+  font: normal 700 14px "ReadexPro-Bold", sans-serif;
   justify-content: center;
   align-items: center;
 

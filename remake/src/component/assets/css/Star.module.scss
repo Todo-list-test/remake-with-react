@@ -1,4 +1,4 @@
-.star-container {
+.container {
   display: flex;
   width: 134px;
   height: 24px;
@@ -22,7 +22,7 @@
     background-repeat: no-repeat;
   }
 
-  .label-star {
+  .label {
     position: relative;
     display: inline-block;
     width: 14px;
@@ -31,68 +31,87 @@
     z-index: 1;
   }
 
-  .star-radio {
+  .radio {
     opacity: 0;
     width: 0;
     height: 0;
     position: absolute;
 
+    @for $i from 1 to 10 {
+      &:nth-of-type-#{$i} {
+        &:hover ~ .star,
+        &:checked ~ .star {
+          width: $i * 10%;
+        }
+      }
+    }
+
     &:nth-of-type(1) {
-      &:hover ~ .star, &:checked ~ .star {
+      &:hover ~ .star,
+      &:checked ~ .star {
         width: 9.5%;
       }
     }
 
     &:nth-of-type(2) {
-      &:hover ~ .star, &:checked ~ .star {
+      &:hover ~ .star,
+      &:checked ~ .star {
         width: 20%;
       }
     }
 
     &:nth-of-type(3) {
-      &:hover ~ .star, &:checked ~ .star {
+      &:hover ~ .star,
+      &:checked ~ .star {
         width: 30%;
       }
     }
 
     &:nth-of-type(4) {
-      &:hover ~ .star, &:checked ~ .star {
+      &:hover ~ .star,
+      &:checked ~ .star {
         width: 40%;
       }
     }
 
     &:nth-of-type(5) {
-      &:hover ~ .star, &:checked ~ .star {
+      &:hover ~ .star,
+      &:checked ~ .star {
         width: 50.5%;
       }
     }
 
     &:nth-of-type(6) {
-      &:hover ~ .star, &:checked ~ .star {
+      &:hover ~ .star,
+      &:checked ~ .star {
         width: 60%;
       }
     }
 
     &:nth-of-type(7) {
-      &:hover ~ .star, &:checked ~ .star {
+      &:hover ~ .star,
+      &:checked ~ .star {
         width: 71.25%;
       }
     }
 
     &:nth-of-type(8) {
-      &:hover ~ .star, &:checked ~ .star {
+      &:hover ~ .star,
+      &:checked ~ .star {
         width: 80%;
       }
     }
 
     &:nth-of-type(9) {
-      &:hover ~ .star, &:checked ~ .star {
+      &:hover ~ .star,
+      &:checked ~ .star {
         width: 91%;
       }
     }
 
     &:nth-of-type(10) {
-      &:hover ~ .star, &:checked ~ .star {
+      &:hover ~ .star,
+      &:checked ~ .star {
         width: 100%;
       }
     }

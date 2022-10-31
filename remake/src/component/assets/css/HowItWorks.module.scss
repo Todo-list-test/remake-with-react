@@ -1,6 +1,6 @@
 /* how-it-works */
 
-.how-it-works {
+.howITWorks {
   width: 1032px;
   height: 505px;
   margin: 80px auto;
@@ -67,22 +67,30 @@
   }
 }
 
-.easy-to-order {
+.easyToOrder {
   margin-right: 156px;
-  background-image: url('../img/bg_order.png');
+  background-image: url("../img/bg_order.png");
   background-repeat: no-repeat;
   background-position: 16px top;
+  > p {
+    width: 234px;
+    height: 50px;
+  }
 }
 
-.fastest-delivery {
+.fastestDelivery {
   margin-right: 153px;
-  background-image: url('../img/bg_delivery.png');
+  background-image: url("../img/bg_delivery.png");
   background-repeat: no-repeat;
   background-position: 29px top;
+  > p {
+    width: 220px;
+    height: 50px;
+  }
 }
 
-.best-quality {
-  background-image: url('../img/bg_quality.png');
+.bestQuality {
+  background-image: url("../img/bg_quality.png");
   background-repeat: no-repeat;
   background-position: 44px top;
   > p {
@@ -90,14 +98,4 @@
     height: 50px;
     margin: 0 auto;
   }
-}
-
-.easy-to-order > p {
-  width: 234px;
-  height: 50px;
-}
-
-.fastest-delivery > p {
-  width: 220px;
-  height: 50px;
 }

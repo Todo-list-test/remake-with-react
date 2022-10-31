@@ -1,14 +1,5 @@
 /* our menu */
-
-.menu > li {
-  width: 280px;
-  height: 371px;
-  background-color: #f1f1f1;
-  border-radius: 10px;
-  filter: drop-shadow(2px 5px 12px rgba(0, 0, 0, 0.15));
-}
-
-.menu-large-container {
+.largeContainer {
   > img {
     width: 230px;
     height: 230px;
@@ -20,7 +11,7 @@
   }
 }
 
-.menu-small-container {
+.smallContainer {
   width: 280px;
   height: 112px;
   border-top-left-radius: 50% 27px;
@@ -29,11 +20,10 @@
   border-bottom-left-radius: 10px;
 }
 
-.menu-contents {
+.contents {
   width: 236px;
   height: 85px;
   padding: 14px 22px;
-
 
   > {
     b {
@@ -67,29 +57,21 @@
   width: 24px;
   height: 24px;
   float: right;
-  content: url('../img/img_heart_unseleted.png');
+  content: url("../img/img_heart_unseleted.png");
   cursor: pointer;
 }
 
 input:checked + .like {
   width: 24px;
   height: 24px;
-  content: url('../img/img_heart_selected.png');
+  content: url("../img/img_heart_selected.png");
   cursor: pointer;
-}
-
-.more-menu {
-  width: 136px;
-  height: 40px;
-  background-color: #ffcb45;
-  font: normal 700 14px "ReadexPro";
-  border-radius: 50px;
 }
 
 svg {
   position: absolute;
-  top:259px;
-  left:0px;
+  top: 259px;
+  left: 0px;
   z-index: -1;
   border-radius: 10px;
 }

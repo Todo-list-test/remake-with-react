@@ -4,22 +4,26 @@
   width: 100%;
   height: 601px;
   background-color: #fff9ea;
-  background-image: url('../img/bg_wavy_line.png'), url('../img/bg_wavy_line.png');
+  background-image: url("../img/bg_wavy_line.png"),
+    url("../img/bg_wavy_line.png");
   background-position: left 491px, left 528px;
   background-repeat: no-repeat;
 }
 
-.home-content {
+.content {
   width: 1440px;
   height: 601px;
   margin: 0 auto;
-  background-image: url('../img/bg_home.png'), url('../img/bg_circle.png'), url('../img/bg_circle.png'), url('../img/bg_circle.png'), url('../img/bg_circle.png');
+  background-image: url("../img/bg_home.png"), url("../img/bg_circle.png"),
+    url("../img/bg_circle.png"), url("../img/bg_circle.png"),
+    url("../img/bg_circle.png");
   background-size: 500px 589px, 41px, 54px, 19px, 74px;
-  background-position: 810px 12px, 734px 462px, 810px 52px, 854px 237px, 1220px 249px;
+  background-position: 810px 12px, 734px 462px, 810px 52px, 854px 237px,
+    1220px 249px;
   background-repeat: no-repeat;
 }
 
-.home-title {
+.title {
   width: 480px;
   height: 120px;
   padding: 176px 0px 0px 130px;
@@ -32,7 +36,7 @@
   }
 }
 
-.home-main-text {
+.mainText {
   width: 370px;
   height: 46px;
   margin: 22px 0px 22px 135px;
@@ -40,12 +44,12 @@
   color: #615f5a;
 }
 
-.home-start-btn {
+.startBtn {
   width: 122px;
   height: 38px;
   font: 0 0 0 135px;
   margin: 0 0 0 135px;
   background-color: #ffcb45;
   border-radius: 20px;
-  font: normal 800 14.5px 'Inter-Medium';
+  font: normal 800 14.5px "Inter-Medium";
 }
